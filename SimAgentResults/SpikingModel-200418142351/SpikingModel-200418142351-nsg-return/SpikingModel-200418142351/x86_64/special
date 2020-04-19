@@ -1,0 +1,13 @@
+#!/bin/sh
+if test "x${NRNHOME}" = "x" ; then
+	NRNHOME="/projects/ps-nsg/home/nsguser/applications_centos7/neuron7.7/nrn-7.7"
+fi
+if test "x${NRNBIN}" = "x" ; then
+	NRNBIN="/projects/ps-nsg/home/nsguser/applications_centos7/neuron7.7/nrn-7.7/x86_64/bin/"
+fi
+if test "" = "yes" ; then
+	NRNIV="${NRNBIN}nrniv.app/Contents/MacOS/nrniv"
+else
+	NRNIV="${NRNBIN}nrniv"
+fi
+"${NRNIV}" -dll "/projects/ps-nsg/home/nsguser/ngbwr/workspace/NGBW-JOB-NEURON77_TG-E5BBE89E24B6476F93B95742FC5B76C2/SpikingModel-200418142351/x86_64/.libs/libnrnmech.so" "$@"

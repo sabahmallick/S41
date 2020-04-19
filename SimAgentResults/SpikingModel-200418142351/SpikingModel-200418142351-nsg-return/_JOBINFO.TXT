@@ -1,0 +1,26 @@
+Task label=REST v1
+Task ID=14518
+Tool=NEURON77_TG
+created on=2020-04-18 07:24:17.0
+JobHandle=NGBW-JOB-NEURON77_TG-E5BBE89E24B6476F93B95742FC5B76C2
+resource=comet
+User ID=1950
+User Name=sabahmallick
+email=sabahmallick@yahoo.com
+
+Output=(outputfile,*.tar.gz,UNKNOWN,UNKNOWN,UNKNOWN)
+JOBID=32708424
+
+job_properties ({'Task': 'ID=14518', 'resource': 'comet', 'created': 'on=2020-04-18 07:24:17.0', 'Tool': 'NEURON77_TG', 'JobHandle': 'NGBW-JOB-NEURON77_TG-E5BBE89E24B6476F93B95742FC5B76C2', 'JOBID': '32708424', 'User': 'Name=sabahmallick', 'Output': '(outputfile,*.tar.gz,UNKNOWN,UNKNOWN,UNKNOWN)', 'email': 'sabahmallick@yahoo.com'})
+
+gatewayuser (sabahmallick)
+
+gateway_submit_attributes=curl -XPOST --data @$HOME/.xsede-gateway-attributes-apikey --data-urlencode "gatewayuser=sabahmallick"  --data-urlencode "xsederesourcename=comet.sdsc.xsede" --data-urlencode "jobid=32708424" --data-urlencode "submittime=`date '+%F %T %:z'`" https://xsede-xdcdb-api.xsede.org/gateway/v2/job_attributes
+
+gateway_submit_attributes retval (0) output (Job attributes:
+  Job: 32708424
+  Job submitted: 2020-04-18 07:24:26-0700
+  Resource Name: comet.sdsc.xsede
+  Gateway Name: neuroscience_gateway
+  Gateway User: sabahmallick
+)

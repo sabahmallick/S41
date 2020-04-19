@@ -1,0 +1,13 @@
+
+job status updated.
+./batch_command.cmdline
+./batch_command.run
+./batch_command.status
+./_COMMANDLINE
+./done.txt
+./epilog
+./inputfile
+./_JOBINFO.TXT
+./nsgdebug
+./scheduler.conf
+./scheduler_stderr.txt

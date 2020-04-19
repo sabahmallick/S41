@@ -1,0 +1,10 @@
+NEURON -- VERSION 7.7.2 7.7 (2b7985ba) 2019-06-20
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2018
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ mod_nsgportal/kdr.mod mod_nsgportal/leak.mod mod_nsgportal/na.mod
+/projects/ps-nsg/home/nsguser/applications_centos7/neuron7.7/nrn-7.7/x86_64/bin/nrniv: Couldn't find: graphic_library.hoc
+ in main.hoc near line 3
+ {load_file("graphic_library.hoc")}
+                                   ^

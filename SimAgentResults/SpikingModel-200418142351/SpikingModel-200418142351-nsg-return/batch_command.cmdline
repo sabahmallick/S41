@@ -1,0 +1,13 @@
+#!/bin/sh
+module purge
+unset PYTHONPATH
+module load intel
+module load mvapich2_ib
+module load gsl
+module load hdf5
+module load python
+source /projects/ps-nsg/home/nsguser/applications_centos7/python3.6.9.tool/python3sysvenv/bin/activate
+source /projects/ps-nsg/home/nsguser/applications_centos7/python3.6.9.tool/install/bin/nest_vars.sh
+source /projects/ps-nsg/home/nsguser/applications_centos7/python3.6.9.tool/nrnenv
+export HDF5_USE_FILE_LOCKING=FALSE
+ibrun --npernode=1  /projects/ps-nsg/home/nsguser/applications_centos7/neuron7.7/nrn-7.7/x86_64/bin/nrniv -mpi main.hoc 

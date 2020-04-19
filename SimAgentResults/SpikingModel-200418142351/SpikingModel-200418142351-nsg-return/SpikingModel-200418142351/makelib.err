@@ -1,0 +1,9 @@
+ls: cannot access mod_nsgportal/*.inc: No such file or directory
+Translating na.mod into na.c
+Translating kdr.mod into kdr.c
+Translating leak.mod into leak.c
+Thread Safe
+Thread Safe
+Thread Safe
+ld: skipping incompatible /lib/libgcc_s.so.1 when searching for libgcc_s.so.1
+ld: skipping incompatible /lib/libgcc_s.so.1 when searching for libgcc_s.so.1
